@@ -13,6 +13,13 @@
   }
 }
 
+@media screen and (min-width: 710px){
+  .hero {
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +43,18 @@
     transform: rotate(360deg);
   }
 }
+
+.max-width {
+  margin: auto;
+  max-width: 1100px;
+  z-index: 1;
+}
+
+.highlight-text {
+  color: #5246fe;
+}
+
+.semihighlight-text {
+  color: #faee5a;
+}
+
