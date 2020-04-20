@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.scss';
-import LandingPage from '../landing-page';
+import Navbar from '../navbar';
+import PlayingCard from '../playing-card/playing-card';
+
 
 function App() {
   return (
-    <LandingPage></LandingPage>
+    <div>
+      <Navbar/>
+      <PlayingCard/>
+    </div>
   );
 }
 

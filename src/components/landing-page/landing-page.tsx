@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import TextLoop from "react-text-loop";
 import './landing-page.scss'
-import LandingPageHeader from "./header";
+
+
 
 function LandingPage(){
     const [cards, setCards] = useState(0);
@@ -9,10 +10,13 @@ function LandingPage(){
 
     return (
         <div>
-            <LandingPageHeader />
-            <h1 className="highlight-text">Memos</h1>
-            <h2>
-                Do you have
+            <h2 className="hero-tag hero-tag--visible ">
+                <div className="highlight-text">
+                Memos
+                </div>
+                <div>
+                Do you have    
+                </div>
                 {" "}
                 <TextLoop
                 springConfig={{ stiffness: 70, damping: 31 }}
