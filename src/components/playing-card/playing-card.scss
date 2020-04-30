@@ -43,14 +43,29 @@
     background: #fff;
     padding: 0;
     border: none;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    border-radius: 15px ;
+    -webkit-box-shadow: 0 1px 3px 0 , 0 0 0 1px #d4d4d5;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     transition: box-shadow .1s ease,transform .1s ease;
     transition: box-shadow .1s ease,transform .1s ease,-webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     z-index: '';
+    padding: 20px;
+    transition: 0.2s;
+
+}
+
+.cardbox:not(:first-child) {
+  margin-left: -4rem;
+}
+
+.cardbox:hover{
+  transform: translateY(-1rem);
+}
+
+.cardbox:hover ~ .cardbox{
+  transform: translateX(4rem);
 }
 
 .cardimage{
@@ -64,6 +79,12 @@
   width: 190px;
   height: 190px;
   border-radius: 15px 15px 0px 0px ;
+  background-color: #a9ccffab;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .image{
@@ -82,12 +103,20 @@
   margin: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 1em;
+  font-size: 1.3em;
   border-radius: 0;
   display: flex;
   flex-direction: row;
   min-height: 50px;
   border-radius: 0px 0px 15px 15px;
+  background-color: #15448c;
+  color: #f7e924;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .insta-logo{
@@ -120,4 +149,29 @@
 
 .link{
   color: #581b98;
+}
+
+.photo{
+  height: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cardbox{
+    width: 60%;
+    height: 60%;
+  }
+
+  .cardimage, .card-desc{
+
+  }
+
+  .image{
+    width: 114px;
+    height: 114px;
+  }
+  .main {
+      display: flex;
+      flex-direction: column;
+  }
 }

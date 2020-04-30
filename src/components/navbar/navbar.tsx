@@ -17,7 +17,7 @@ const Navbar: React.FC<Props> = (props) => {
                     alt="Logo."
                     onClick={() => scroll.scrollToTop()}
                 />
-                <h3 className="header-name">Memos</h3>
+                <h3 className="header-name">memos</h3>
                 </div>
                 
                 <ul>

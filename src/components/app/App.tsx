@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.scss';
 import Navbar from '../navbar';
-import PlayingCard from '../playing-card/playing-card';
-
+import LandingPage from '../landing-page';
 
 function App() {
+
   return (
-    <div>
+    <div className="app">
       <Navbar/>
-      <PlayingCard/>
+      <LandingPage/>
+            
     </div>
   );
 }
